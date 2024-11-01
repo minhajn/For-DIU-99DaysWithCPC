@@ -3,6 +3,7 @@ body{
     margin: 0;
     text-decoration: none;
     background-color: rgb(8, 1, 21);
+    color: white;
 }
 .text-size1{
     font-size: 30px;
