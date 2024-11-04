@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project with offcanvas</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!--Header section-->
+    <section class="bg-light">
+        <header class="header p-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M3 12.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </span>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Testing</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Enter details
+                        </button>
+                        <ul class="dropdown-menu p-3">
+                          <li class="p-1"><input type="text" placeholder="Name" name="" id="" required></li>
+                          <li class="p-1"><input type="tel" placeholder="Id" name="" id="" required></li>
+                          <li class="p-1"><input type="text" placeholder="Registration" name="" id="" required></li>
+                          <li class="p-1"><input type="text" placeholder="Blood group" name="" id=""></li>
+                          <li class="p-1"><input type="tel" placeholder="Mobile number" name="" id="" required></li>
+                          <li class="p-1 text-center"><button class="btn btn-primary" type="submit">Submit</button></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
