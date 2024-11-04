@@ -11,11 +11,11 @@
 
 <body>
 
-    <!--Header section-->
+    <!--Header section navbar with offcanvas-->
     <section class="bg-light">
-        <header class="header p-3">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample">
+        <header class="header p-3 d-flex align-items-center container">
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                aria-controls="offcanvasMenu" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         viewBox="0 0 16 16">
@@ -24,32 +24,63 @@
                     </svg>
                 </span>
             </button>
-
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
+            <nav class="navbar navbar-expand-lg navbar-light flex-grow-1 py-3 sticky-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Minhaz</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+                            <li class="nav-item me-4">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Testing</h5>
+                    <h5 class="offcanvas-title" id="offcanvasLabel">Testing</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Enter details
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Enter details
                         </button>
-                        <ul class="dropdown-menu p-3">
-                          <li class="p-1"><input type="text" placeholder="Name" name="" id="" required></li>
-                          <li class="p-1"><input type="tel" placeholder="Id" name="" id="" required></li>
-                          <li class="p-1"><input type="text" placeholder="Registration" name="" id="" required></li>
-                          <li class="p-1"><input type="text" placeholder="Blood group" name="" id=""></li>
-                          <li class="p-1"><input type="tel" placeholder="Mobile number" name="" id="" required></li>
-                          <li class="p-1 text-center"><button class="btn btn-primary" type="submit">Submit</button></li>
+                        <ul class="dropdown-menu p-3 border border-success">
+                            <li class="p-1"><input class="form-control border-success" type="text" placeholder="Name"
+                                    required></li>
+                            <li class="p-1"><input class="form-control border-success" type="tel" placeholder="Id"
+                                    required></li>
+                            <li class="p-1"><input class="form-control border-success" type="text"
+                                    placeholder="Registration" required></li>
+                            <li class="p-1"><input class="form-control border-success" type="text"
+                                    placeholder="Blood group"></li>
+                            <li class="p-1"><input class="form-control border-success" type="tel"
+                                    placeholder="Mobile number" required></li>
+                            <li class="p-1 text-center"><button class="btn btn-primary" type="submit">Submit</button>
+                            </li>
                         </ul>
-                      </div>
+                    </div>
                 </div>
             </div>
         </header>
     </section>
-
 
     <script src="./js/bootstrap.bundle.js"></script>
 </body>
