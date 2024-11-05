@@ -4,3 +4,31 @@ body{
     text-decoration: none;
     font-family: sans-serif;
 }
+.main-image {
+    background-color: #f8f9fa;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-image img {
+    max-height: 100%;
+}
+.post-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.small-title {
+    font-weight: 500;
+}
+.sub-title {
+    font-size: 0.9rem;
+    color: gray;
+}
+.small-image {
+    height: 150px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
