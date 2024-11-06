@@ -14,7 +14,7 @@
     <!--Header section-->
     <section class="bg-light">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="#">Minhaz</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -34,6 +34,37 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Login
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Login/SignUp</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group p-2">
+                                            <label for="email">Email</label>
+                                            <input class="form-control" type="email" placeholder="enter your email" name="" id="" required>
+                                        </div>
+                                        <div class="form-group p-2">
+                                            <label for="password">Password</label>
+                                            <input class="form-control" type="password" placeholder="enter your passward" name="" id="" required>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
@@ -42,6 +73,9 @@
         </nav>
     </section>
 
+    <div class="p-5 m-5 d-flex justify-content-center text-danger me-auto mx-auto">
+        <h1>Enter login button for showing modal</h1>
+    </div>
 
     <script src="./js/bootstrap.bundle.js"></script>
 </body>
