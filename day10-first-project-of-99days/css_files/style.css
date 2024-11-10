@@ -145,3 +145,42 @@ body{
         margin-top: 30px;
     }
 }
+
+.res-text h1{
+    font-family: protest;
+}
+.receipe{
+    margin-top: 50px;
+}
+.res-cards{
+    margin-top: 100px;
+}
+.res-card-1{
+    height: fit-content;
+}
+.res-card-1 img{
+   width: 100%;
+   cursor: pointer;
+   transition: 0.8s ease-in-out;
+    
+}
+.res-card-1 img:hover{
+    transform: scale(1.1);
+     
+ }
+.min{
+    margin-left:8px;
+}
+.snacks{
+    margin-left:8px;
+}
+#res-card-back{
+    background-image: url(../photos/res-card-6-back.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.inner-car-text p{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bolder;
+}
