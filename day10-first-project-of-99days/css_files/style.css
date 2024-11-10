@@ -58,3 +58,90 @@ body{
     margin-left: 12px;
     
 }
+
+/* catagory section */
+.catagory-text h1{
+    font-family: protest;
+}
+.cat-btn{
+    padding: 8px 20px 8px 20px;
+    border-radius: 20px;
+    background-color:#E7FAFE ;
+    transition: 0.7s ease-in-out;
+    border: none;
+}
+.cat-btn:hover{
+    background-color: rgb(163, 25, 101);
+    color: white;
+}
+.view-cat-btn{
+    
+    display: flex;
+    justify-content: end;
+}
+.card{
+    width: 170px;
+    height:180px ;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+}
+.card img{
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.brek-card{
+    background-color: bisque;
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+}
+.brek-card:hover{
+    transform: scale(1.1);
+}
+.veg-card{
+   background-color: rgb(163, 197, 226);
+   transition: 0.8s ease-in-out;
+   cursor: pointer;
+}
+.veg-card:hover{
+    transform: scale(1.1);
+}
+.meat-card{
+    background-color: rgb(79, 179, 112);
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+}
+.meat-card:hover{
+    transform: scale(1.1);
+}
+.desrt-card{
+    background-color: rgb(224, 224, 171);
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+}
+.desrt-card:hover{
+    transform: scale(1.1);
+}
+.lunch-card{
+    background-color: rgb(224, 191, 84);
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+}
+.lunch-card:hover{
+    transform: scale(1.1);
+}
+.choc-card{
+    background-color: rgb(248, 18, 87);
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+}
+.choc-card:hover{
+    transform: scale(1.1);
+}
+@media(max-width:500px){
+    .view-cat-btn{
+        display: block;
+        margin-top: 30px;
+    }
+}
