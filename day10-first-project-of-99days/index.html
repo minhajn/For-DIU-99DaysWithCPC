@@ -1,20 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 01 of 99Days</title>
     <link rel="stylesheet" href="./bootstrap_files/bootstrap.css">
-    <link rel="stylesheet" href="./bootstrap_files/bootstrap.min.css">
     <link rel="stylesheet" href="./css_files/style.css">
     <link rel="stylesheet" href="./fontawesome_files/all.css">
-    
+
 </head>
+
 <body>
-    
+
+    <!--Navbar section-->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="nav_logo">
+                <a class="navbar-brand" href="#"><img src="./photos/Sultans-Diner-main-logo.webp" alt=""></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Catering</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Outlets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Career</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex align-items-center" action="/search" method="GET">
+                        <div class="collapse" id="searchInput">
+                            <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
+                        </div>
+                        <button class="btn btn-link text-decoration-none ms-2" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#searchInput" aria-expanded="false" aria-controls="searchInput">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <script src="./bootstrap_files/bootstrap.bundle.js"></script>
-    <script src="./bootstrap_files/bootstrap.min.js"></script>
     <script src="./fontawesome_files/all.js"></script>
 </body>
+
 </html>
