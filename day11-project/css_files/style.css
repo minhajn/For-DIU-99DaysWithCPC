@@ -8,3 +8,29 @@ body{
     width: 150px;
     margin-left: 30px;
 }
+
+.scrolling-img {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.scrolling-img img {
+    width: auto;
+    height: 200px;
+    margin-right: 10px;
+    display: block;
+}
+
+.scrolling-img {
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
